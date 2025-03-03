@@ -1,0 +1,41 @@
+.reviews-panel{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    padding: 100px;
+}
+
+.elfsight-app-36c4e88b-83ba-43d9-b531-b3b5edf8f0b9 {
+    position: relative;
+    z-index: 1;
+}
+
+.elfsight-app-36c4e88b-83ba-43d9-b531-b3b5edf8f0b9:hover {
+    /* Desactiva las transformaciones y transiciones solo visualmente */
+    clip-path: inset(0 0 0 0) !important; /* Esto asegura que no haya cambios visuales */
+    transition: none !important; /* Elimina transiciones visuales */
+}
+.elfsight-app-36c4e88b-83ba-43d9-b531-b3b5edf8f0b9 {
+    pointer-events: auto; /* Permite la interacción con el widget */
+}
+
+.elfsight-app-36c4e88b-83ba-43d9-b531-b3b5edf8f0b9:hover {
+    pointer-events: auto; /* Permite la interacción incluso cuando el puntero está sobre el widget */
+}
+.elfsight-app-36c4e88b-83ba-43d9-b531-b3b5edf8f0b9 {
+    /* Eliminar cualquier transición */
+    transition: none !important;
+    transform: none !important;
+    background-color: inherit !important; /* Para evitar cambios de fondo */
+    box-shadow: none !important; /* Para eliminar cualquier sombra */
+}
+
+.elfsight-app-36c4e88b-83ba-43d9-b531-b3b5edf8f0b9:hover {
+    /* Asegúrate de que no haya cambios visuales en el hover */
+    background-color: inherit !important;  /* Prevenir cambio de color */
+    box-shadow: none !important;           /* Prevenir sombras */
+    transform: none !important;           /* Prevenir cambios en el tamaño */
+}
+.Carousel__CarouselContainer-sc-f2ox7y-0.gvwAOS.es-carousel-layout {
+    padding: 20px; /* Ajusta el valor del padding según lo necesites */
+}
