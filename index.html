@@ -295,7 +295,7 @@
                             <h5><strong class="mb-2">¿Desea cotizar la instalación de un aire acondicionado?</strong></h5>
                 
                             <div class="btn-container mb-2">
-                                <a href="https://api.whatsapp.com/send?phone=+521234567890&text=Hola, quiero solicitar una cotización."
+                                <a href="https://api.whatsapp.com/send?phone=+5212791164035&text=Hola, quiero solicitar una cotización."
                                    class="whatsapp-btn">
                                     <i class="fa-brands fa-whatsapp fa-2x"></i><span>Contactar por WhatsApp</span>
                                 </a>
@@ -306,27 +306,26 @@
                             <h6><strong class="mb-2">¿Desea cotizar la instalación de paneles solares?</strong></h6>
                             <p class="mb-2">Compártenos tus datos para contactarte</p>
                 
-                            <form id="emailForm" class="mb-2" enctype="multipart/form-data">
+                            <form id="emailForm" enctype="multipart/form-data">
                                 <div class="mb-2">
-                                    <input type="text" name="nombre" class="form-control border-0" placeholder="Ingrese su nombre completo" required>
+                                    <input type="text" name="nombre" class="form-control border-0" placeholder="Ingrese su nombre completo" required style="height: 52px;">
                                 </div>
                                 <div class="mb-2">
-                                    <input type="email" name="email" class="form-control border-0" placeholder="Ingrese un correo electrónico de contacto" required>
+                                    <input type="email" name="email" class="form-control border-0" placeholder="Ingrese un correo electrónico de contacto" required style="height: 52px;">
                                 </div>
                                 <div class="mb-2">
-                                    <input type="tel" name="telefono" class="form-control border-0" placeholder="Ingrese un número telefónico de contacto" required>
+                                    <input type="tel" name="telefono" class="form-control border-0" placeholder="Ingrese un número telefónico de contacto" required style="height: 52px;">
                                 </div>
-                
                                 <div class="upload-box mb-2" onclick="document.getElementById('fileInput').click();">
                                     <div id="file-preview">
                                         <i class="fa fa-solid fa-upload load-icon fa-3x"></i>
                                     </div>
                                     <p id="file-message">Adjunte su recibo de luz en formato PDF o Imagen</p>
-                                    <input type="file" name="pdf" id="fileInput" class="mb-2" accept=".pdf, .jpg, .png" style="display: none;" required>
+                                    <input type="file" name="pdf" id="fileInput" accept=".pdf, .jpg, .png" style="display: none;" required>
                                 </div>
-                
                                 <button type="submit" class="btn btn-primary rounded-pill py-3 px-5">Enviar Solicitud de Cotización</button>
                             </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -334,6 +333,31 @@
         </div>
     </div>
     <!-- Quote End -->
+<!-- Modal de Carga -->
+<div class="modal fade" id="loadingModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Enviando...</span>
+                </div>
+                <p class="mt-3">Enviando su solicitud...</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Toast en la parte superior, pero más abajo -->
+<div class="position-fixed top-0 end-0 p-3 mt-5" style="z-index: 1050">
+    <div id="emailToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                ¡Correo enviado exitosamente!
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
