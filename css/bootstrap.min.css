@@ -642,14 +642,32 @@ progress {
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
 }
 
+.carousel-config {
+    max-height: 90vh;
+    overflow: hidden;
+    display: block; /* Cambiar de flex a block para evitar que afecte a los hijos */
+    padding-bottom: 2rem; /* Darle un poco más de espacio */
+}
+.img-carousel-config{
+    object-fit: fill;
+}
+.sponsor-config{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2rem !important; /* Agrega margen superior */
+    margin-bottom: 2rem !important; /* Agrega margen inferior */
+}
 @media (min-width: 576px) {
 
     .container,
     .container-sm {
-        max-width: 540px
+        max-width: 540px;
+        margin: auto;
     }
 }
 
@@ -4431,8 +4449,7 @@ fieldset:disabled .btn {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: .5rem;
-    padding-bottom: .5rem
+    margin: 0;
 }
 
 .navbar>.container,
