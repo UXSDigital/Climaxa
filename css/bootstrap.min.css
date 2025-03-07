@@ -233,7 +233,9 @@ sup {
 
 a {
     color: #32C36C;
-    text-decoration: none
+    text-decoration: none;
+    height: auto;
+    max-height: 60px;
 }
 
 a:hover {
@@ -646,7 +648,7 @@ progress {
 }
 
 .carousel-config {
-    max-height: 90vh;
+    max-height: 95vh;
     overflow: hidden;
     display: block; /* Cambiar de flex a block para evitar que afecte a los hijos */
     padding-bottom: 2rem; /* Darle un poco más de espacio */
@@ -3102,7 +3104,7 @@ fieldset:disabled .btn {
     align-content: center;
     color: #000;
     background-color: #171EA6;
-    border-color: #171EA6
+    border-color: #171EA6;
 }
 
 .btn-primary:hover {
@@ -4398,6 +4400,30 @@ fieldset:disabled .btn {
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff
 }
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo adicional para el dropdown */
+.nav-item.dropdown {
+    display: flex;
+    align-items: center;
+}
+
+/* Asegurarse de que el dropdown-toggle también esté centrado */
+.nav-item .nav-link.dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+
+/* Asegurar que el contenido del dropdown-menu esté alineado verticalmente */
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
 
 .nav-tabs .dropdown-menu {
     margin-top: -1px;
@@ -4450,7 +4476,27 @@ fieldset:disabled .btn {
     align-items: center;
     justify-content: space-between;
     margin: 0;
+    height: 60px; /* Ajusta según lo necesario */
+    padding: 5px 15px; /* Reduce el padding interno */
 }
+.logo-navbar {
+    max-height: 50px; /* Ajusta la altura según lo necesario */
+    width: auto; /* Mantiene la proporción */
+}
+.btn-cotizar {
+    background-color: #1E1E8F; /* Color de fondo */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    height: 100%; /* Ocupa toda la altura del navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    max-height: 60px;
+}
+
 
 .navbar>.container,
 .navbar>.container-fluid,
@@ -4466,11 +4512,10 @@ fieldset:disabled .btn {
 }
 
 .navbar-brand {
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    white-space: nowrap
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-nav {
@@ -4478,12 +4523,16 @@ fieldset:disabled .btn {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
+    align-items: center;
 }
 
 .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    padding: 10px 15px; /* Ajusta el espaciado interno */
+    max-width: 100%; /* Evita que el enlace sea más grande de lo necesario */
+    overflow: hidden; /* Si algo se desborda, lo oculta */
+    text-overflow: ellipsis; /* Si el texto es demasiado largo, se mostrará con "..." */
 }
 
 .navbar-nav .dropdown-menu {
@@ -4498,7 +4547,9 @@ fieldset:disabled .btn {
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
-    align-items: center
+    align-items: center;
+     background-color: #fff; /* O el color que prefieras */
+     max-height: 750px;
 }
 
 .navbar-toggler {
@@ -7301,7 +7352,7 @@ fieldset:disabled .btn {
 }
 
 .border-end {
-    border-right: 1px solid #dee2e6 !important
+    border-right: 1px solid #dee2e6 !important;
 }
 
 .border-end-0 {
