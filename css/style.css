@@ -220,6 +220,14 @@
     color: var(--light);
 }
 
+/*** Distribuidor ***/
+.sponsor-config {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 5px 0;
+}
 
 /*** About ***/
 @media (min-width: 992px) {
