@@ -42,7 +42,9 @@
         scroll-behavior: smooth
     }
 }
+/* Estilos para instagram */
 
+/*  */
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
@@ -12601,3 +12603,5 @@ fieldset:disabled .btn {
         display: none !important
     }
 }
+
+

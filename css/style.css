@@ -597,3 +597,36 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+.social-widgets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .social-widgets {
+        flex-wrap: nowrap;
+    }
+}
+
+.social-widgets iframe, .social-widgets .instagram-media {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    min-height: 600px;
+}
+
+@media (min-width: 768px) {
+    .social-widgets iframe, .social-widgets .instagram-media {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    .social-widgets iframe, .social-widgets .instagram-media {
+        width: 100%;
+    }
+}
