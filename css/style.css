@@ -494,9 +494,11 @@
 }
 
 .testimonial-carousel .testimonial-img img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
+    width: 200px;  /* Puedes ajustar este valor según sea necesario */
+    height: 200px; /* Mantiene un tamaño uniforme */
+    object-fit: contain; /* Evita distorsión manteniendo la imagen dentro del contenedor */
+    display: block;
+    margin: 0 auto;
 }
 
 .testimonial-carousel .testimonial-img .btn-square {
