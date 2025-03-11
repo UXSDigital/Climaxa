@@ -77,6 +77,20 @@
     font-weight: normal;
 }
 
+.btn-more {
+    color: #F21D2F !important; /* Texto oscuro para contraste */
+}
+
+/* Cambiar el color cuando el usuario pasa el mouse */
+.btn-more:hover {
+    color: #fa6060 !important; /* Mantener el texto oscuro */
+}
+
+p i.fa-check-circle {
+    color: #F2CF63 !important; /* Amarillo */
+}
+
+
 /*** Navbar ***/
 .navbar.sticky-top {
     top: -100px;
@@ -212,7 +226,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-1.webp) center center no-repeat;
     background-size: cover;
 }
 
@@ -549,11 +563,36 @@
 
 
 /*** Footer ***/
+.map-container {
+    width: 100%;
+    height: 200px;
+    max-width: 250px; /* Ajusta el tamaño máximo del mapa */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Alineación de los elementos del footer */
+.footer .row {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons-config {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    justify-content: center;
+}
+
 .footer .btn.btn-social {
     margin-right: 5px;
     color: #9B9B9B;
     border: 1px solid #9B9B9B;
-    border-radius: 38px;
     transition: .3s;
 }
 
