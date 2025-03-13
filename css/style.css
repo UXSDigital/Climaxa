@@ -671,3 +671,9 @@ p i.fa-check-circle {
         width: 100%;
     }
 }
+
+
+.hidden-text {
+     display: none;
+}
+

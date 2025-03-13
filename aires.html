@@ -77,7 +77,7 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5" style="background-image: url('img/about-2.webp'); background-size: cover; background-position: center;">
+    <div class="container-fluid page-header py-5 mb-5" style="background-image: url('img/aires.png'); background-size: cover; background-position: center;">
         <div class="container py-5">
             <h1 class="display-3 text-white mb-3 animated slideInDown">Aires Acondicionados</h1>
             <nav aria-label="breadcrumb animated slideInDown">
@@ -89,7 +89,61 @@
             </nav>
         </div>
     </div>
-    <!-- Page Header End -->  
+    <!-- Page Header End -->
+     
+  <!-- Proyectos Start -->
+  <div class="container-xxl py-3">
+    <div class="container">
+        <div class="text-start mb-3 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h3 class="mb-4">Hacemos proyectos...</h3>
+        </div>
+        <!-- Centrando los elementos -->
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item rounded overflow-hidden">
+                    <img class="img-fluid" src="img/residencial.png" alt="">
+                    <div class="position-relative p-4 pt-0">
+                        <h4 class="mb-3" style="margin-top: 15px;">Residenciales</h4>
+                        <a class="small fw-medium btn-more" href="javascript:void(0);" onclick="toggleText(this)">Saber más<i class="fa fa-arrow-right ms-2"></i></a>
+                        <div class="hidden-text">
+                            <p>Convierta su casa en un oasis de frescura y bienestar con un aire acondicionado diseñado para brindarle el clima perfecto en cualquier temporada.</p> 
+                            <p><b>¡Olvídese del calor sofocante y disfrute de una temperatura agradable en cada rincón de su hogar!</b></p></p>                     
+                        </div>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item rounded overflow-hidden">
+                    <img class="img-fluid" src="img/comercial.png" alt="">
+                    <div class="position-relative p-4 pt-0">
+                        <h4 class="mb-3" style="margin-top: 15px;">Comerciales</h4>
+                        <a class="small fw-medium btn-more" href="javascript:void(0);" onclick="toggleText(this)">Saber más<i class="fa fa-arrow-right ms-2"></i></a>
+                        <div class="hidden-text">
+                            <p>Climatice su negocio con eficiencia y confort siempre a la temperatura ideal y mejora la experiencia de clientes y colaboradores con un aire acondicionado de alto rendimiento. </p>
+                            <p><b> ¡Haga que su negocio se sienta tan bien como se ve!</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item rounded overflow-hidden">
+                    <img class="img-fluid" src="img/hvac.png" alt="">
+                    <div class="position-relative p-4 pt-0">
+                        <h4 class="mb-3" style="margin-top: 15px;">HVAC</h4>
+                        <a class="small fw-medium btn-more" href="javascript:void(0);" onclick="toggleText(this)">Saber más<i class="fa fa-arrow-right ms-2"></i></a>
+                        <div class="hidden-text">
+                            <p>Optimice el clima de su espacio con un sistema HVAC diseñado para garantizar confort, eficiencia y rendimiento. Ya sea para una residencia, un negocio o una industria.</p>
+                            <p><b>Ofrecemos diseño, instalación y mantenimiento de soluciones personalizadas. </b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Proyectos End -->
     
     <!-- Quote Start -->
     <div id="quote-form-container" class="container-fluid bg-light overflow-hidden px-lg-0">
@@ -280,6 +334,20 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/quote.form.js"></script>
+
+    <!-- Script para mostrar/ocultar el texto -->
+    <script>
+        function toggleText(element) {
+            var paragraph = element.nextElementSibling;
+            if (paragraph.style.display === "none" || paragraph.style.display === "") {
+                paragraph.style.display = "block";
+                element.innerHTML = 'Mostrar menos <i class="fa fa-arrow-up ms-2"></i>';
+            } else {
+                paragraph.style.display = "none";
+                element.innerHTML = 'Saber más <i class="fa fa-arrow-right ms-2"></i>';
+            }
+        }
+    </script>
 
 </body>
 
