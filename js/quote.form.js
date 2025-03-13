@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (isIndexPage) {
                 // 🟢 En index.html -> Enviar con archivo adjunto
                 formData = new FormData(this);
-                formData.append("destinatario", "dcpyahir@gmail.com");
+                formData.append("destinatario", "ialessandra.reyes@gmail.com");
             } else {
                 // 🔵 En aires.html -> Enviar solo datos sin archivo
                 const nombre = document.querySelector('input[name="nombre"]').value.trim();
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (response.ok) {
                     emailToastEl.classList.replace("text-bg-danger", "text-bg-success");
-                    document.querySelector("#emailToast .toast-body").textContent = result.message || "¡Correo enviado exitosamente!";
+                    document.querySelector("#emailToast .toast-body").textContent = result.message || "¡Correoaaaaaaa enviado exitosamente!";
                     emailToast.show();
                     
                     // Limpiar formulario después de enviarlo
@@ -99,40 +99,3 @@ document.getElementById('fileInput').addEventListener('change', function() {
         fileMessage.textContent = 'Adjunte su recibo de luz en formato PDF o Imagen';
     }
 });
-
-
-
-async function enviarDatosSinArchivo() {
-    const nombre = document.querySelector('input[name="nombre"]').value;
-    const email = document.querySelector('input[name="email"]').value;
-    const telefono = document.querySelector('input[name="telefono"]').value;
-
-    const formData = { nombre, email, telefono };
-
-    console.log("Datos enviados:", formData); // ✅ Verificar en consola antes de enviar
-
-    try {
-        // Simulación de envío (cambia la URL según tu destino real)
-        const response = await fetch("https://ejemplo.com/guardar-datos", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formData),
-        });
-
-        const result = await response.json();
-
-        // Mostrar mensaje en consola
-        if (response.ok) {
-            alert("¡Datos enviados correctamente!");
-            console.log("Respuesta del servidor:", result);
-
-            // Limpiar formulario
-            document.getElementById("emailForm").reset();
-        } else {
-            throw new Error(result.error || "Error al enviar los datos.");
-        }
-    } catch (error) {
-        console.error("Error en el envío:", error);
-        alert("Hubo un error al enviar los datos.");
-    }
-}
