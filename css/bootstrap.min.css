@@ -8412,9 +8412,12 @@ fieldset:disabled .btn {
 .text-reset {
     color: inherit !important
 }
+.creditos:hover{
+    color: #d8d8d8 !important;
+}
 
 .bg-primary {
-    background-color: #32C36C !important
+    background-color: #1E1E8F !important
 }
 
 .bg-secondary {

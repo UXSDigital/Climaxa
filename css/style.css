@@ -109,8 +109,9 @@ p i.fa-check-circle {
 
 /* Imagen Responsiva */
 .social-banner-img {
-    max-width: 90%;  /* Ajusta la imagen sin que ocupe todo el ancho */
+    max-width: 40%;  /* Ajusta la imagen sin que ocupe todo el ancho */
     height: auto;  /* Mantiene la proporción */
+    overflow: hidden;
     object-fit: scale-down; /* Ajuste óptimo para cubrir sin deformar */
 }
 
@@ -194,6 +195,9 @@ p i.fa-check-circle {
 }
 
 @media (max-width: 768px) {
+    .social-banner-img {
+        max-width: 80%;
+    }
     .header-carousel .owl-carousel-item {
         position: relative;
         min-height: 500px;
