@@ -43,31 +43,33 @@
         </div>
     </div>
     <!-- Spinner End -->
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5 logo-navbar">
-            <img src="img/climaxa-logo-climas.webp" class="logo-navbar" alt="Climaxa - Inicio">
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Inicio</a>
-                <a href="about.html" class="nav-item nav-link">Quiénes somos</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Servicios</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="aires.html" class="dropdown-item">Aires Acondicionados</a>
-                        <a href="paneles.html" class="dropdown-item">Paneles Solares</a>
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5 logo-navbar">
+                <img src="img/climaxa-logo-climas.webp" class="logo-navbar" alt="Climaxa - Inicio">
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link">Quiénes somos</a>
+        
+                    <!-- Servicios con submenú -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dropdownServicios">Servicios</a>
+                        <div class="dropdown-menu bg-light m-0" id="submenuServicios">
+                            <a href="aires.html" class="dropdown-item">Aires Acondicionados</a>
+                            <a href="paneles.html" class="dropdown-item">Paneles Solares</a>
+                        </div>
                     </div>
-                </div>
+                    </div>
+                <a href="#quote-form-container" class="btn-cotizar btn btn-primary rounded-0 d-none d-lg-block">Solicitar
+                    Cotización<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
-            <a href="#quote-form-container" class="btn-cotizar btn btn-primary rounded-0 d-none d-lg-block">Solicitar
-                Cotización<i class="fa fa-arrow-right ms-3"></i></a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5"
         style="background-image: url('img/paneles.webp'); background-size: cover; background-position: center;"

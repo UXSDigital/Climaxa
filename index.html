@@ -53,19 +53,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
                 <a href="about.html" class="nav-item nav-link">Quiénes somos</a>
+    
+                <!-- Servicios con submenú -->
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
-                    <div class="dropdown-menu bg-light m-0">
+                    <a href="#" class="nav-link dropdown-toggle" id="dropdownServicios">Servicios</a>
+                    <div class="dropdown-menu bg-light m-0" id="submenuServicios">
                         <a href="aires.html" class="dropdown-item">Aires Acondicionados</a>
                         <a href="paneles.html" class="dropdown-item">Paneles Solares</a>
                     </div>
                 </div>
-            </div>
+                </div>
             <a href="#quote-form-container" class="btn-cotizar btn btn-primary rounded-0 d-none d-lg-block">Solicitar
                 Cotización<i class="fa fa-arrow-right ms-3"></i></a>
-
         </div>
     </nav>
     <!-- Navbar End -->
@@ -342,18 +343,10 @@
 
     </div>
     <!-- Clientes End -->
+
+
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="text-primary">Testimonios</h6>
-                <h1 class="mb-4">Lo que nuestros clientes dicen...</h1>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.10/iframeResizer.min.js"></script>
-            <iframe onload="iFrameResize(this)" src="https://36c4e88b83ba43d9b531b3b5edf8f0b9.elf.site"
-                style="border:none;width:100%;"></iframe>
-        </div>
-    </div>
+    <!-- <script src="https://widget.trustmary.com/ST2FNbcEi"></script> -->
     <!-- Testimonial End -->
     <!-- Quote Start -->
     <div id="quote-form-container" class="container-fluid bg-light overflow-hidden px-lg-0">
@@ -519,7 +512,7 @@
                     </div>
                 </div>
                 <!-- Redes Sociales -->
-                <div class="col-lg-3 col-md-6 d-row justify-content-center">
+                <div class="col-lg-3 col-md-6 d-row div-sociales-footer">
                     <h5 class="text-white text-center">Redes Sociales</h5>
                     <div class="pt-2 social-icons-config">
                         <a class="btn btn-square btn-outline-light btn-social" href="https://www.facebook.com/climaxa"
