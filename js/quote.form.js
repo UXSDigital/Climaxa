@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let formData;
             if (isIndexPage) {
                 formData = new FormData(this);
-                formData.append("destinatario", "ialessandra.reyes@gmail.com");
+                formData.append("destinatario", "climaxa@hotmail.com");
             } else {
                 const nombre = document.querySelector('input[name="nombre"]').value.trim();
                 const email = document.querySelector('input[name="email"]').value.trim();
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     alert("Por favor, completa todos los campos.");
                     return;
                 }
-                formData = JSON.stringify({ nombre, email, telefono, destinatario: "dcpyahir@gmail.com" });
+                formData = JSON.stringify({ nombre, email, telefono, destinatario: "climaxa@hotmail.com" });
             }
             const loadingModal = new bootstrap.Modal(document.getElementById('loadingModal'));
             loadingModal.show();
